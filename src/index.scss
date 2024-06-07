@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #86929e;
+	color: #22282f;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: url("./assets/img/New-BG.png");
+	// background-position: left bottom;
+	// background-image: url("./assets/img/png-BG2.png"),
+	// 	url("./assets/img/png-BG2.png");
+	background-position: center;
+	// background-repeat: no-repeat, no-repeat;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+html,
+body {
+	height: 100%; /* Ensure the html and body take full viewport height */
+	overflow: hidden; /* Hide scrollbars and prevent scrolling */
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+button {
+	border-radius: 28px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	box-shadow: 0 -0.4px 2px 0 #ffe1c9, 0px 3px 8px -1px #724c3b;
+	background-color: #ef976f;
+	color: #ffe1c9;
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+
+button:active {
+	background-color: #ee8f63;
+	transform: translateY(2px);
+}

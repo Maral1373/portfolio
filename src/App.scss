@@ -1,0 +1,97 @@
+/* General section styling */
+.section {
+	// border: red 2px solid;
+	width: 90rem; /* Set the desired width */
+	height: 55rem; /* Set the desired height */
+	// overflow: hidden; /* Prevent children from overflowing */
+	position: relative;
+}
+
+.row {
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	gap: 2rem;
+	width: 90rem;
+}
+
+.box-shadow {
+	border-radius: 30px;
+	box-shadow: rgba(50, 50, 93, 0.25) -20px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 10px 8px 16px -8px;
+	transition: opacity 0.2s ease-in-out, transform 1.2s;
+	opacity: 1;
+}
+
+.flexRow {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	width: 100%;
+}
+
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.box {
+	width: 30.67rem;
+	background-color: #fef2e6;
+}
+
+.box2 {
+	background-image: url("./assets/img/person.jpg");
+	background-size: 34rem;
+	background-position: 100% 10%;
+}
+
+.box3 {
+	height: 40vh;
+}
+
+.box4 {
+	height: 16.7vh;
+}
+
+.box5 {
+	width: 100%;
+	height: 19vh;
+	overflow: auto;
+}
+
+/* Adjust hover effects */
+.row .box-shadow:hover ~ .box-shadow,
+.row .box-shadow:hover ~ .flexColumn .box-shadow,
+.row .flexColumn .box-shadow:hover ~ .box-shadow,
+.row .flexColumn .box-shadow:hover ~ .flexRow .box-shadow {
+	opacity: 0.4;
+}
+
+.row .flexColumn .box-shadow:hover ~ .box-shadow,
+.row .flexRow .box-shadow:hover ~ .box-shadow {
+	opacity: 0.4;
+}
+
+.row:hover .box-shadow {
+	opacity: 0.4;
+}
+
+.row .box-shadow:hover {
+	opacity: 1;
+	transform: scale(1.05); /* Smaller zoom effect */
+	transition: transform 1.2s, opacity 1.2s; /* Ensure smooth transition */
+}
+
+.topHeader {
+	border-radius: 28px 28px 0 0;
+	border: #aba09e solid 1px;
+	height: 5rem;
+	background: #aba09e;
+	text-align: center;
+}
+
+.title {
+	margin: auto;
+}
