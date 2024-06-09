@@ -1,0 +1,7 @@
+@mixin displayFlex($direction: row) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: space-between;
+}
+
+$border-radius: 30px;

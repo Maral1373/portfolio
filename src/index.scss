@@ -8,21 +8,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
 	background-image: url("./assets/img/New-BG.png");
-	// background-position: left bottom;
-	// background-image: url("./assets/img/png-BG2.png"),
-	// 	url("./assets/img/png-BG2.png");
-	background-position: center;
-	// background-repeat: no-repeat, no-repeat;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-html,
-body {
-	height: 100%; /* Ensure the html and body take full viewport height */
-	overflow: hidden; /* Hide scrollbars and prevent scrolling */
 }
 
 h1 {
