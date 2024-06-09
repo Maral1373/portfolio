@@ -4,4 +4,16 @@
 	justify-content: space-between;
 }
 
+@mixin media-query($size) {
+	@media (min-width: map-get($breakpoints, $size)) {
+		@content;
+	}
+}
+
 $border-radius: 30px;
+
+$breakpoints: (
+	"small": 480px,
+	"medium": 768px,
+	"large": 1024px,
+);

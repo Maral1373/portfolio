@@ -19,6 +19,7 @@
 	background-size: cover;
 	margin: 5vh auto;
 	gap: 5vh;
+	// background-color: green;
 }
 
 .flexRow {
@@ -88,11 +89,73 @@
 	display: flex;
 	border-radius: $border-radius $border-radius 0 0;
 	border: #aba09e solid 1px;
-	height: 60px;
+	height: 55px;
 	background: #aba09e;
 	text-align: center;
 }
 
 .title {
 	margin: auto;
+}
+
+.container {
+	@include media-query("small") {
+		font-size: 11px;
+	}
+	.flexRow {
+		@include displayFlex(column);
+		width: 100%;
+		gap: 3vh;
+	}
+
+	.box3 {
+		margin-bottom: 3vh;
+	}
+
+	.box {
+		@include displayFlex(column);
+		width: 100%;
+		font-size: 11px;
+	}
+
+	@include media-query("large") {
+		.container {
+			width: 90vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: 5vh auto;
+			gap: 5vh;
+		}
+
+		.flexRow {
+			@include displayFlex(row);
+			width: 100%;
+		}
+
+		.flexColumn {
+			@include displayFlex(column);
+		}
+
+		.box {
+			width: 28vw;
+			height: 70vh;
+		}
+
+		.box3 {
+			height: 37vh;
+		}
+
+		.box4 {
+			height: 28vh;
+		}
+
+		.box5 {
+			height: 16.7vh;
+			width: 100%;
+		}
+	}
 }
