@@ -1,4 +1,4 @@
-@use "./utilities.scss" as *;
+@use "../utilities.scss" as *;
 
 // /*
 // #fef2e6
@@ -8,6 +8,10 @@
 // #dadada
 // #86929e
 // #566374 */
+
+Link {
+	color: red;
+}
 
 .container {
 	width: 90vw;
@@ -32,8 +36,8 @@
 }
 
 .box {
-	width: 28vw;
-	height: 70vh;
+	width: 28vw; //ff
+	height: 70vh; //ff
 	background-color: #fef2e6;
 	border-radius: $border-radius;
 	box-shadow: rgba(50, 50, 93, 0.25) -20px 13px 27px -5px,
@@ -43,7 +47,7 @@
 }
 
 .box2 {
-	background-image: url("./assets/img/person.jpg");
+	background-image: url("../assets/img/person.jpg");
 	background-repeat: no-repeat;
 	background-size: 120%;
 	background-position-y: 20%;
@@ -51,7 +55,7 @@
 }
 
 .box3 {
-	height: 37vh;
+	height: 37vh; //ff
 }
 
 .box4 {
